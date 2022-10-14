@@ -1,0 +1,134 @@
+<?php require_once 'ayar.php';?>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Giriş Yap</title>
+	
+	<link rel="stylesheet" type="text/css" href="otostyle.css">
+	<link rel="stylesheet" type="text/css" href="font-awesome.min.css">
+	
+</head>
+<body>
+	<div class= "container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="Otomobil_Bilgi_Sayfası.html"><img src = "img/logo4y.png" alt= "logo" width="350" height="200"></a>
+        </div>
+        <ul>
+            <li><a href="Otomobil_Bilgi_Sayfası.html"target="" class="active">ANASAYFA</a>
+            <li><a href="haberler.html"target="_self"class="active">HABERLER</a>
+            <li><a href="OtomobilMarkaları.html" target="_self">OTOMOBİL MARKALARI</a></li>
+            <li><a>VİDEOLAR</a>
+                <div class= "sub-menu-1">
+                    <ul>
+                        <li><a href="testsürüsleri.html">Test Sürüşleri</a></li>
+                                            
+                    </ul>
+                </div>
+        
+            <li><a href="fotogaleri.html" target="_self">FOTO GALERİ</a></li>
+            <li><a href="login.php" target="_self">ARABA İLANLARI</a></li>
+            <li><a href="iletisim.php" target="_self">İLETİŞİM</a></li>
+        </ul>
+        <i class= "fa fa-bars"></i>
+    </div>
+</div>
+
+
+<section id= "features" class="sectionArea">
+    <div class="captionTop">
+        <h2 style="color: white;" class="sectionHeader"> ARABA İLANLARI</h2> 
+    </div>
+    <div class="form-style" >
+        <ul>
+            <li>
+                <input type="submit" onclick="location='ilanekle.php'" value="İLAN EKLE"/> 
+            </li>
+        </ul>
+    </div> 
+    
+</section>
+
+
+<div class= "galeriBody">
+    <div class="container2">
+        <div class= "col3">
+                
+                    <div class="img">
+                    <a target="_blank" href="2018MansoryMcLaren-720S-First-Edition.jpg">
+                        <img src="img/2018MansoryMcLaren-720S-First-Edition.jpg" >
+                    </a>
+                    <div class="içerik"><h2>2018 MANSORY MCLAREN 720S </h2>Mansory, McLaren 720S için aerodinamik bir paket ve hafif performans yükseltmeleri sunuyor. Yeni dış kısımlar, önlük ve genişletilmiş hava girişleri, yeni ön kaput, yan etek ve kanat uzantıları ile yeniden tasarlanmış bir ön uç ve yeni bir arka spoylerden oluşuyor. Tüm parçalar elbette karbon fiberden yapılmıştır.4 litrelik çift turboşarjlı V8, 710 hp'lik bir artışla 755 hp üretiyor ve 2,8 saniyede 0-62 mil / saat, 214 mil / saat'e kadar çıkabiliyor. Bunun yanında inanılmaz bir torka sahiptir.</div>
+                    </div>
+
+
+                    <div class="img">
+                    <a target="_blank" href="2018Rolls-Royce-Wraith-Luminary.jpg">
+                        <img src="img/2018Rolls-Royce-Wraith-Luminary.jpg" >
+                    </a>
+                    <div class="içerik"><h2>2018 ROLLS-ROYCE WRAİTH </h2>55 Rolls-Royce Wraith, uygun şekilde adlandırılan Luminary Collection'ın bir parçası olacak. 55 Rolls-Royce Luminary araçları, parıldayan yıldızlı bir gece gökyüzü izlenimi veren şaşırtıcı 1340 fiber optik ışığa sahip kayan bir yıldız tavan döşemesine sahip olacak. İç mekanda Çek Cumhuriyeti'nden Tudor Meşe ahşabı kullanıldı ve kaplamaya gömülü 176 LED ışık bulunuyor. Yıldız ışığı tavan döşemesinin kontrolleri ile yönetilen bunlar, yolcuları parlayan ışıklarla çevrelemek için birlikte çalışırlar.</div>
+                    </div>
+
+                    <div class="img">
+                    <a target="_blank" href="2019Bugatti-Chiron.jpg">
+                        <img src="img/2019Bugatti-Chiron.jpg">
+                    </a>
+                    <div class="içerik"><h2>2019 BUGATTİ CHİRON SPORT</h2>Chiron şimdiden şimdiye kadar yaratılmış en yoğun Bugatti yol otomobili ve şimdi daha pist odaklı bir varyant olan Chiron Sport'u sunuyorlar. Sport, Chiron'un 8 litrelik dört turboşarjlı W16 motorundan 1479 hp'lik üstün güç çıkışını paylaşıyor. 4400 librelik hiper arabayı 4360 libreye düşüren yaklaşık 40 librelik küçük bir ağırlık azalması var. Chiron Sport'un parladığı yer, yol tutuş ve viraj alma hızlarıdır. Nardo kontrol devresini Chiron'dan tam 5 saniye daha hızlı turlayabilir.</div>
+                    </div>
+
+                    <div class="img">
+                    <a target="_blank" href="PorscheTaycan.jpg">
+                     <img src="img/PorscheTaycan.jpg" >
+                    </a>
+                    <div class="içerik"><h2>2020 PORSCHE TAYCAN</h2>Taycan Turbo 0'dan 100 km/sa hıza 3,2 saniyede erişirken menzili 450 km, Taycan Turbo S modeli ise 0'dan 100 km/sa hıza 2.8 saniyede ulaşırken 412 km menzile sahip. Taycan, elektrikli otomobiller için normal voltaj düzeyi olan 400 volt yerine 800 voltluk bir sistemle çalışan ilk tamamen elektrikli spor otomobil.</div>
+                    </div>
+
+                    <div class="img">
+                    <a target="_blank" href="2021Tesla.jpg">
+                        <img src="img/2021Tesla.jpg" >
+                    </a>
+                    <div class="içerik"><h2>2021 TESLA MODEL S</h2>Motor. Tesla Model S'in performans modelinde 3 fazlı ve 4 kutuplu AC motor bulunmaktadır. Aracın performans modelinde arka arkaya monte edilmiş iki elektrik motoru toplamda 416 hp (310 kW) güç vermektedir. Aracın baz versiyonunda ise 362 hp (270 kW) güç sağlayan tek elektrik motoru bulunmaktadır.</div>
+                    </div>
+
+                    <div class="img">
+                     <a target="_blank" href="togg.jpeg">
+                        <img src="img/togg.jpeg" >
+                    </a>
+                    <div class="içerik"><h2>2023 TOGG</h2>Araç gücünü lityum iyon pillerden almaktadır. Tek şarj ile batarya kapasitesine göre 300 km ve 500 km menzile sahip iki farklı paket sunulacaktır. Aracın bataryalarının 30 dakikadan kısa sürede %80 şarj edilebilmesi planlanmaktadır.Aracın arkadan itişli 200 HP ve 4x4 400 HP olacak şekilde iki farklı motordan oluşacaktır.</div>
+                    </div>
+                
+            </div>
+    </div>
+</div>
+
+
+
+<hr>
+<footer class="sectionArea">
+        <div class="container2">
+            <div class="col3">
+                <div class="footerItem">
+                    <h2 style="color: white;">BİZİ TAKİP EDİN</h2>
+                    <ul class="socialLinks">
+                        <li><a href="#"><i class=" fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class=" fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class=" fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class=" fa fa-youtube"></i></a></li>
+                    </ul>
+                    <p style="color: white;">2021,BU SİTENİN TÜM HAKLARI SAKLIDIR.</p>
+                    
+                </div>
+                
+            </div>
+
+        </div>
+        
+
+
+
+</footer>
+	
+    
+</body>
+</html>

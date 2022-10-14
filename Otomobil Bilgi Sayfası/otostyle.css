@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+@media only screen and (max-width: 668px) { 
+
+	.container .navbar ul {
+		display:none;
+		justify-content: space-between;
+		margin-right: 10%;
+
+	}
+	
+
+	.container .navbar i {
+		display: block;
+		color: white;
+		font-size: 30px;
+		cursor: pointer;
+		position: absolute;
+		
+	}
+}
+
+
+*{
+	margin:0;
+	padding: 0;
+	background-attachment: fixed;
+}
+
+body{
+	
+	background-color: #191919;
+	font-family: 'Calibri';
+	
+
+}
+
+.container{
+	background-image: url(img/kadran3.jpg);
+	fill: url(img/kadran3.jpg);
+	width: 100%;
+	height: 35vh; /*viewport height*/
+	background-size: 55%;
+	
+}
+
+.navbar .logo{
+    display: inline-block; 
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+
+
+.navbar ul{
+    float: right;
+    margin-right: 0px;
+    display:  flex;
+
+}
+
+.navbar ul li{
+
+    display: inline-block;
+    list-style: none;
+    line-height: 50px;
+    margin: 15px 12px; /*navbarımzın konumunu ayaralar*/
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: Calibri;
+    padding: 6px 13px;/*iç kenar boşluğu*/
+    transition: 1s;
+}
+
+
+.navbar ul li a:hover{
+    background-color: red;
+    border-radius: 10px; /*köşeleri yuvarlama*/
+}
+.navbar ul .sub-menu-1{
+    display: none;
+}
+.navbar ul li:hover .sub-menu-1{
+	display: block;
+	position: absolute;
+	margin-top:-2px;
+	margin-left: 0px;
+	font-size: 30px;
+	text-align: center;
+	background-color:#500d16 ;
+
+}
+.navbar ul li:hover .sub-menu-1 ul li{
+	display: block;
+	width: 170px;
+	height: 50px;
+	padding: -5px;
+	border-bottom: 1px solid ;
+	text-align: left;
+	border-radius: 1px;
+	cursor: pointer;
+}
+.navbar i {
+	display: none ;
+}
+
+
+/*ANASAYFA FOTOĞRAF VE BAŞLIK CSS*/
+
+#mainFoto{
+	height: 650px; /* Görselin yüksekliği*/
+	background: url(img/tt.jpg) center center;  /* görselimi ekleyerek tam merkezde olacağını belirttim*/
+	background-size: cover; /*cover tanımlandığında genişlik ve yükseklikten küçük olanı yani burada yüksekliğin uzunluğu kapsayıcı genişliğine sığıncaya kadar orantılı şekilde büyütülerek atanmış.*/
+
+}
+.Foto{
+	width: 100%; /* fotoğrafı ekrana sığdırdık*/
+}
+
+#mainCaption{    
+	height: 100%;
+	background: rgba(0, 0, 0, .5); /* buranın sayesinde ekrana gölgelik ekledim */
+}
+
+
+.caption{
+	display:  flex;
+	flex-direction: column; /* sütun olarak sıralar*/
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	color: #fff;
+
+}
+
+
+.caption h1{
+	font-size: center;
+	color: white;
+	font size:50px;
+	letter-spacing: 4px;
+	margin-bottom:20px;
+	
+}
+
+
+.sectionArea{
+	padding: 50px 0;
+	margin: 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.sectionHeader{
+	background: #550D16;
+	border-bottom: 6px solid #000;
+	height: 45px;
+	font-size: 24px;
+	padding: 5px 40px ;
+	letter-spacing: 2px;
+	
+}
+
+
+.container2{
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	
+}
+
+
+.col3{
+	flex-grow: 1;
+	width: 33.33%; 
+}
+
+
+.item{
+	
+	padding: 10px 10px;
+}
+
+
+/* ANASAYFA SLİDER CSS*/
+
+.slider{
+	width: 50%;
+	overflow: hidden; /* taşan kısımları gizler.*/
+	border: 2px solid #323232;
+	
+	
+}
+
+.galeri{
+	position: relative;
+	width: 400%;
+	left: 0;
+	animation: 10s slayt infinite;
+	
+}
+
+.galeri img{
+	width: 25%;
+	float: left;
+	
+}
+
+@keyframes slayt{
+	0%{left:0%;}
+	15%{left:0%;}
+	25%{left:-100%;}
+	45%{left:-100%;}
+	50%{left:-200%;}
+	70%{left:-200%;}
+	85%{left:-300%;}
+
+}
+
+iframe
+{
+	width: 55%;
+	height: 350px;
+}
+
+
+/* HABERLER CARD CSS*/
+
+
+.card{
+    background-color: white ;
+    
+    width: 65%;
+    display: flex;
+    margin-left:15%;
+
+}
+
+.card_picture {
+    flex: 0 0 50%;
+    
+}
+
+.card_img{
+    display: block;
+    width: 100%;
+}
+
+
+/*TEST SÜRÜŞLERİNDEKİ KARTLARIN İMG CSS'i*/
+.card_img2{
+	
+    width: 65%;
+}
+
+.card_img2 iframe{
+	 width: 154%;
+	 height: 500px; 
+
+}
+
+.card_content{
+    padding: 18px 18px 9px 18px;
+}
+
+h3{
+	font-size: 13px; 
+	color: red; 
+	margin-top: 10px; 
+	font-weight: normal 
+	
+}
+
+
+
+/*OTOMOBİL MARKALARI CSS*/
+
+.mycard { 
+	background-color: white;  
+	width:310px; 
+	margin: 50px; 
+	float: left;
+	padding: 20px; 
+	 
+}
+
+.mycard img {
+ 	width: 100%;  
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px #800000;
+	transition: 500ms;
+}
+
+.mycard:hover img {
+ 	transform:scale(1.05);
+}
+
+.mycard h1 { 
+	font-size: 20px; 
+	color: black; 
+	margin-top: 10px; 
+}
+
+.mycard h2 { 
+	font-size: 13px; 
+	 margin-top: 10px; 
+	 font-weight: normal;
+	 color: red;
+	margin-right: 10px;
+
+}
+
+.mycard h3 { 
+	font-size: 15px;
+	 color: black; 
+	 margin-top: 10px; 
+	 line-height: 21px;
+}
+
+
+
+
+
+/*Galeri slider CSS*/
+
+.galerislider {
+	overflow: hidden;
+	width:70%;
+	margin: 0 auto;
+}
+
+.galerisliderItem {
+	width: 600%;
+	position: relative;
+	left: 0;
+	animation: slayt2 30s infinite ;
+
+}
+.galerisliderItem img {
+	width: 16.66%;
+	float: left;
+	
+}
+
+@keyframes slayt2{
+	0%{left:0%;}
+	5%{left:0%;}
+	20%{left:-100%;}
+	40%{left:-200%;}
+	65%{left:-300%;}
+	85%{left:-400%;}
+	100%{left:0%;}
+
+}
+
+/*Foto Galeri CSS*/
+
+.img {
+    margin: 20px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 410px;
+}
+
+.img:hover {
+    border: 1px solid #777;
+}
+
+.img img {
+    width: 100%;
+   
+}
+
+.içerik {
+    padding: 15px;
+    text-align: center;
+    color: white;
+
+}
+
+
+
+/*İLETİŞİM BACKGROUND CSS*/
+#iresim{
+	height: 650px; /* Görselin yüksekliği*/
+	background: url(img/tcip.jpg) center center;  /* görselimi ekleyerek tam merkezde olacağını belirttim*/
+	background-size: cover; /*cover tanımlandığında genişlik ve yükseklikten küçük olanı yani burada yüksekliğin uzunluğu kapsayıcı genişliğine sığıncaya kadar orantılı şekilde büyütülerek atanmış.*/
+
+}
+
+.resim{
+	width: 100%; /* fotoğrafı ekrana sığdırdık*/
+}
+
+
+
+#anabaşlık{    
+	height: 100%;
+	background: rgba(0, 0, 0, .5); /* buranın sayesinde ekrana gölgelik ekledim */
+}
+
+
+
+
+.başlık{
+	display:  flex;
+	flex-direction: column; /* sütun olarak sıralar*/
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	color: #fff;
+
+}
+
+
+
+/*İLETİŞİM KISMI CSS*/
+.form-style{
+	width: 85%;
+	padding: 30px;
+	
+	border-radius: 6px;
+	border: 6px solid darkred;
+}
+.form-style ul{
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+.form-style ul li{
+	display: block;
+	margin-bottom: 10px;
+	min-height: 35px;
+}
+.form-style ul li .alan-stili{
+	box-sizing: border-box; 
+	padding: 8px;
+	border: 1px solid #B0CFE0;
+
+ }
+
+.form-style ul li .bolunmus-alan{
+	width: 49%;
+}
+.form-style ul li .tum-alan{
+	width: 100%;
+}
+.form-style ul li input.sola-hiza{
+	float:left;
+
+}
+.form-style ul li input.saga-hiza{
+	float:right;
+}
+.form-style ul li textarea{
+	width: 100%;
+	height: 100px;
+}
+.form-style ul li input[type="button"], .form-style ul li input[type="submit"] {
+	background-color: red;
+	cursor: pointer;
+	color: #FFFFFF;
+	padding: 8px 18px;
+	text-decoration: none;
+	font: 12px calibri;
+}
+
+.form-style ul li input[type="button"]:hover, .form-style ul li input[type="submit"]:hover {
+	
+	background-color: green;
+}
+
+
+
+
+
+/*FOOTER CSS*/
+
+footer {
+	background: #500d16;
+	text-align: center;
+
+}
+
+footer .fa {
+	font-size: 40px;
+	color: #95a5a6;
+	line-height: 50px;
+	transition: .3s ease;
+
+}
+
+footer .fa:hover{
+	color: #fff;
+} 
+
+.socialLinks li {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+}
